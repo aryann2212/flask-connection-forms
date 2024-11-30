@@ -1,3 +1,8 @@
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+logging.info("This is a log message.")
+
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
